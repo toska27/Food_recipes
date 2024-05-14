@@ -8,7 +8,7 @@ const RecipeList = ({ recipes, searchedQuery }) => {
       <h3>Recipe Lists for {searchedQuery}</h3>
       <div className="gridRecipes">
         {recipes.map((recipe) => (
-          <RecipeListItem key={recipe.id} recipe={recipe} />
+          <RecipeListItem id={recipe.id} recipe={recipe} />
         ))}
       </div>
     </div>
