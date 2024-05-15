@@ -7,6 +7,11 @@ const RecipeListItem = ({ recipe, id }) => {
       <img src={recipe.image_url} alt="photo" />
       <h2>{recipe.title}</h2>
       <h4>{recipe.publisher}</h4>
+      <div className="btns">
+        <a href={recipe.source_url} className="btn_url">
+          Recipe URL
+        </a>
+      </div>
     </div>
   );
 };
