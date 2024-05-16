@@ -16,7 +16,6 @@ const Recipes = () => {
         if (data && data.recipes) {
           setRecipes(data.recipes);
         }
-        setRecipes(data.recipes);
       } catch (error) {
         console.log("error fetching data:", error);
       }

@@ -5,7 +5,7 @@
   height: 100vh;
   text-align: center;
 }
-h1 {
+.title_home {
   margin-top: 0;
   padding-top: 80px;
   color: rgb(250, 250, 250);

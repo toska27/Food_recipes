@@ -19,8 +19,11 @@ const Search = ({ setSearchedQuery }) => {
           placeholder="tomato,potato,pizza"
           onChange={(e) => setValue(e.target.value)}
           value={value}
+          className="input_search"
         />
-        <button type="submit">Search</button>
+        <button type="submit" className="btn_search">
+          Search
+        </button>
       </form>
     </div>
   );
