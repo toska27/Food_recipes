@@ -9,3 +9,35 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.btns_view {
+  margin: 10px auto;
+  text-align: center;
+}
+.more_view {
+  background-color: rgb(7, 119, 20);
+  color: rgb(242, 241, 241);
+  font-weight: 300;
+  cursor: pointer;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 10%;
+}
+.less_view {
+  background-color: rgb(116, 11, 34);
+  color: rgb(242, 241, 241);
+  font-weight: 300;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 5px;
+  width: 10%;
+}
+.more_view:hover {
+  background-color: rgb(4, 68, 11);
+}
+.less_view:hover {
+  background-color: rgb(82, 8, 24);
+}
+.non_view {
+  display: none;
+}
