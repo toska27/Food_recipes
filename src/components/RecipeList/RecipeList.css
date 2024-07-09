@@ -4,7 +4,7 @@
 .gridRecipes {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 10px 250px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@
   height: 30px;
   margin-right: 5px;
   border-radius: 5px;
-  width: 10%;
+  width: 15%;
 }
 .less_view {
   background-color: rgb(116, 11, 34);
@@ -30,14 +30,23 @@
   cursor: pointer;
   height: 30px;
   border-radius: 5px;
-  width: 10%;
+  width: 15%;
 }
 .more_view:hover {
-  background-color: rgb(4, 68, 11);
+  background-color: rgb(5, 88, 11);
 }
 .less_view:hover {
   background-color: rgb(82, 8, 24);
 }
 .non_view {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .more_view {
+    width: 30%;
+  }
+  .less_view {
+    width: 30%;
+  }
 }

@@ -18,15 +18,18 @@ const Navbar = () => {
     }
     setLastScrollY(window.scrollY);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
   }, [lastScrollY]);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <div className={`navbar ${showNavbar ? "active" : "hidden"}`}>
       <img src={Logo} className="logo" alt="Logo" />

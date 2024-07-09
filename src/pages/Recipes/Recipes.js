@@ -13,8 +13,10 @@ const Recipes = () => {
       try {
         const response = await fetch(`${API_URL}/search?q=${searchedQuery}`);
         const data = await response.json();
-        if (data && data.recipes) {
+        if (data && data.recipes && data.recipes.length > 0) {
           setRecipes(data.recipes);
+        } else {
+          setRecipes([]); // Resetujemo recipes na prazan niz ako nema rezultata
         }
       } catch (error) {
         console.log("error fetching data:", error);
