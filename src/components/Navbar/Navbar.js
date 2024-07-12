@@ -30,12 +30,20 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className={`navbar ${showNavbar ? "active" : "hidden"}`}>
       <img src={Logo} className="logo" alt="Logo" />
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <Link to="/">Home</Link>
-        <Link to="/recipes">Recipes</Link>
+        <Link to="/" onClick={handleLinkClick}>
+          Home
+        </Link>
+        <Link to="/recipes" onClick={handleLinkClick}>
+          Recipes
+        </Link>
       </nav>
       <div className="hamburger" onClick={toggleMenu}>
         <span className="bar"></span>
