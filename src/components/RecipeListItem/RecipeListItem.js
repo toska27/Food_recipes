@@ -6,7 +6,9 @@ import "./RecipeListItem.css";
 const RecipeListItem = ({ recipe, id }) => {
   return (
     <div className="recipeListItem" key={id}>
-      <img src={recipe.image_url} alt="photo" className="item_img" />
+      <div className="item_img_container">
+        <img src={recipe.image_url} alt="photo" className="item_img" />
+      </div>
       <h2 className="item_title">{recipe.title}</h2>
       <h4 className="item_publ">{recipe.publisher}</h4>
       <div className="btns">
